@@ -4,10 +4,11 @@
 let readlineSync = require('readline-sync');
 
 class Articolo {
-    constructor(id, titolo, descrizione, immagine, autore) {
+    constructor(id, titolo, descrizione, categoria, immagine, autore) {
         this.id = id;
         this.titolo = titolo;
         this.descrizione = descrizione;
+        this.categoria = categoria;
         this.immagine = immagine;
         this.autore = autore;
     }
@@ -42,6 +43,7 @@ function getID(articoli) {
 function addArticle(articoli) {
     let titolo = readlineSync.question("Inserire il titolo ... ");
     let descrizione = readlineSync.question("Inserire la descrizione ... ");
+    let categoria = readlineSync.question("Inserire la categoria ... ");
     let immagine = readlineSync.question("Inserire l'immagine ... ");
     let autore = readlineSync.question("Inserire l'username dell'autore ... ");
     let nuovoArticolo = new Articolo(getID(articoli), titolo, descrizione, immagine, autore);

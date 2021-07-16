@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7fa7e605-286f-49f0-bcf9-4554f8bdb619" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Versione01/article-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/Versione01/article-manager.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Versione01/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Versione01/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1626449412942</updated>
       <workItem from="1626449419760" duration="81000" />
+      <workItem from="1626449724732" duration="149000" />
     </task>
     <servers />
   </component>
