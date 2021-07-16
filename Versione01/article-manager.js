@@ -1,5 +1,6 @@
 "use strict";
 
+// import di readline-sync per inserire input da terminale.
 let readlineSync = require('readline-sync');
 
 class Articolo {
@@ -101,7 +102,7 @@ if (require.main === module) {
     let choice = readlineSync.question("Inserisci la tua scelta... ");
 
         switch(choice.trim()) {
-            
+
             case "1":
                 addArticle(articoli);
                 break;
