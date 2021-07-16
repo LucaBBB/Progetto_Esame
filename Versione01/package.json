@@ -1,0 +1,11 @@
+{
+  "name": "versione01",
+  "version": "1.0.0",
+  "description": "Versione 1 del progetto Articolo",
+  "main": "article-manager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luca Borsalino",
+  "license": "ISC"
+}
