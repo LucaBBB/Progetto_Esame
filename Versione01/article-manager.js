@@ -25,18 +25,18 @@ function printMenu() {
 
 /**
  * Funzione che restituisce quale sara' l'id del nuovo articolo che verra' inserito.
- * 
+ *
  * @param {*} articoli array contenente tutti gli articoli salvati.
- * 
+ *
  * @returns l'id del prossimo articolo.
  */
 function getID(articoli) {
-    return articoli.length+1;
+    return articoli.length + 1;
 }
 
 /**
  * Funzione che aggiunge un nuovo articolo ai salvati.
- * 
+ *
  * @param {*} articoli array contenente tutti gli articoli salvati.
  */
 function addArticle(articoli) {
@@ -49,14 +49,13 @@ function addArticle(articoli) {
     if (!articoli.includes(nuovoArticolo)) {
         articoli.push(nuovoArticolo);
         console.log("Nuovo articolo aggiunto!\n");
-    }
-    else
+    } else
         console.log("Articolo gia' presente!\n");
 }
 
 /**
  * Funzione che rimuove un articolo dato il suo id.
- * 
+ *
  * @param {*} articoli l'articolo da rimuovere.
  */
 function removeByTitle(articoli) {
@@ -65,7 +64,7 @@ function removeByTitle(articoli) {
     else {
         let titolo = readlineSync.question("Inserire il titolo ... ");
         let eliminato = false;
-        for (let i=0; i<articoli.length; i++) {
+        for (let i = 0; i < articoli.length; i++) {
             if (articoli[i].titolo === titolo) {
                 articoli.splice(i, 1);
                 eliminato = true;
@@ -81,7 +80,7 @@ function removeByTitle(articoli) {
 
 /**
  * Funzione che stampa le informazioni di tutti gli articoli salvati.
- * 
+ *
  * @param {*} articoli l'array contenente tutti gli articoli.
  */
 function printAllArticles(articoli) {
@@ -100,11 +99,11 @@ function printAllArticles(articoli) {
 if (require.main === module) {
     const articoli = [];
 
-    const menu = setInterval(()=> {
-    printMenu();
-    let choice = readlineSync.question("Inserisci la tua scelta... ");
+    const menu = setInterval(() => {
+        printMenu();
+        let choice = readlineSync.question("Inserisci la tua scelta... ");
 
-        switch(choice.trim()) {
+        switch (choice.trim()) {
 
             case "1":
                 addArticle(articoli);
