@@ -13,6 +13,9 @@ class Articolo {
     }
 }
 
+/**
+ * Funzione che mostra il menu.
+ */
 function printMenu() {
     console.log("\nMENU");
     console.log("1 per inserire un nuovo articolo\n");
